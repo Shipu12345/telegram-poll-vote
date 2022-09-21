@@ -1,3 +1,4 @@
+import time
 from telegram.client import Telegram
 import os
 
@@ -39,10 +40,10 @@ def get_message():
     #     print(f"message: {result.update}")
 
 
-def vote():
+def vote(chat_id, msg_id):
     params = {
-        "chat_id": -1001557909306,
-        "message_id": 59768832,
+        "chat_id": chat_id,
+        "message_id": msg_id,
         "option_ids": [0],
     }
     result = tg.call_method("setPollAnswer", params)
@@ -53,13 +54,31 @@ def vote():
     else:
         print(f"message has been sent: {result.update}")
 
+def new_message_handler(update):
+        message_content = update['message']['content']
+        print(message_content)
+        chat_id = "-1001413972467"
+        message_text = message_content.get('text', {}).get('text', '').lower()
+
+        if message_content['@type'] == 'messagePoll':
+            time.sleep(500)
+            chat_id = update['message']['chat_id']
+            print(f'Ping has been received from {chat_id}')
+            try:
+                vote(chat_id, update['message']['id'])
+            except Exception as e:
+                print(e)
+
+    
+
 
 def main():
     tg.login()
-    get_all_chats()
-    get_history()
-    # get_message()
-    vote()
+    # get_all_chats()
+    # get_history()
+    # # get_message()
+    # vote(chat_id, msg_id)
+    tg.add_message_handler(new_message_handler)
     tg.idle()
 
 

@@ -2,12 +2,11 @@ version: "3.5"
 services:
   telegram-poll-voter:
     build:
-      context: ./
-      dockerfile: Dockerfile
+      context: ../
+      dockerfile: docker/Dockerfile
     volumes:
-      - ./:/myapp
+      - ../:/myapp
       - /tmp/docker-python-telegram/:/tmp/
     container_name: telegram-poll-voter
-    command: bash -c "chmod +x ./start.sh && ./start.sh"
     tty: true
-    env_file: ./.env
+    env_file: ../.env

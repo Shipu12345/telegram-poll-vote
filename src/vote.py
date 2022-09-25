@@ -57,7 +57,7 @@ def vote(chat_id, msg_id):
 def new_message_handler(update):
         message_content = update['message']['content']
         print(message_content)
-        chat_id = "-1001413972467"
+        chat_id = os.getenv("GROUP_ID")
         message_text = message_content.get('text', {}).get('text', '').lower()
 
         if message_content['@type'] == 'messagePoll':
@@ -68,8 +68,6 @@ def new_message_handler(update):
                 vote(chat_id, update['message']['id'])
             except Exception as e:
                 print(e)
-
-    
 
 
 def main():

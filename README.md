@@ -7,15 +7,15 @@ will vote in telegram poll of a telegram group.
 Getting Started
 ---------------------------------------------------------------------------------------------------------------------
 
-Configuration of .env file:
+    Configuration of .env file:
 
-    1. Copy env.example to .env file.
+        1. Copy env.example to .env file.
 
-    2. You need to get APP_ID and APP_HASH from registering  https://my.telegram.org/auth.
+        2. You need to get APP_ID and APP_HASH from registering  <a href="https://my.telegram.org/auth">here</a> .
 
-    3. Assign poll group id to GROUP_ID
+        3. Assign poll group id to GROUP_ID
 
-    4. Assign mobile number to PHONE with proper country code.
+        4. Assign mobile number to PHONE with proper country code.
 
 
 

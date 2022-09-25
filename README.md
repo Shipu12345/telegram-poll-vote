@@ -2,7 +2,7 @@
 will vote in telegram poll of a telegram group. 
 
 
-**Prerequisite**
+**Prerequisite:**
 
 You need to register [here](my.telegram.org/auth) by giving your desired mobile number and the telegram account.
 
@@ -52,7 +52,7 @@ Getting Started
         ! ./bin/deploy.sh
 
 
-Further Instractions:
+**Further Instractions:**
 
     If you need to re-login in any probable case, delete docker-python-telegram folder from tmp, start from the begining.
 

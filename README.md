@@ -11,7 +11,7 @@ Getting Started
 
         1. Copy env.example to .env file.
 
-        2. You need to get APP_ID and APP_HASH from registering  <a href="https://my.telegram.org/auth">here</a> .
+        2. You need to get APP_ID and APP_HASH from registering  <a href="https://my.telegram.org/auth">here</a>
 
         3. Assign poll group id to GROUP_ID
 

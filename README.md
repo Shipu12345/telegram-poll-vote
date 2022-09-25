@@ -2,6 +2,9 @@
 will vote in telegram poll of a telegram group. 
 
 
+**Prerequisite**
+
+You need to register [here](my.telegram.org/auth) by giving your desired mobile number and the telegram account.
 
 
 Getting Started
@@ -11,12 +14,11 @@ Getting Started
 
         1. Copy env.example to .env file.
 
-        2. You need to get APP_ID and APP_HASH from registering  [here](https://my.telegram.org/auth)
+        2. You need to assign APP_ID and APP_HASH from your previous registration. 
 
         3. Assign poll group id to GROUP_ID
 
         4. Assign mobile number to PHONE with proper country code.
-
 
 
     1. clone the repo:

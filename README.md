@@ -3,7 +3,7 @@ will vote in telegram poll of a telegram group. We implemented Sir Asad's Optima
 
 
 **Sir Asad's Optimal Option Theorem:**
-    *Let A Poll, IFF the poll is a subset of a Single Select Multiple Choice Question, the Count of votes of an option is directly proportional to the probability the optimal voting option.*
+    *Let A Poll, IFF the poll is a subset of a Single Select Multiple Choice Question, the Count of votes of an option is directly proportional to the probability of the optimal voting option.*
 
 
 

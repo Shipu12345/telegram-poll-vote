@@ -56,7 +56,7 @@ Getting Started
 
     If you need to re-login in any probable case, delete docker-python-telegram folder from tmp, start from the begining.
 
-        ! sudo rm -rf /tmp/docker-python-telegram
+        ! sudo rm -rf ~/.docker-python-telegram
 
 
 

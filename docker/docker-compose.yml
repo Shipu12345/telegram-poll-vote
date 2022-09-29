@@ -6,7 +6,7 @@ services:
       dockerfile: docker/Dockerfile
     volumes:
       - ../:/myapp
-      - /tmp/docker-python-telegram/:/tmp/
+      - ~/.docker-python-telegram/:/tmp/
     container_name: telegram-poll-voter
     command: bash -c "chmod +x  bin/start.sh && bin/start.sh"
     restart: unless-stopped

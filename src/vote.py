@@ -111,10 +111,7 @@ def vote(params: dict, is_updated: bool = False):
             delete_line_from_file(str(params['chat_id']), str(params['message_id']))
             is_updated = False
         
-            
-
-    
-
+        
 
 def new_message_handler(update):
     message_content = update["message"]["content"]

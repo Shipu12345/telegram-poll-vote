@@ -6,7 +6,7 @@ services:
       dockerfile: docker/Dockerfile
     volumes:
       - ../:/myapp
-      - /tmp/docker-python-telegram/:/tmp/
+      - ~/.docker-python-telegram/:/tmp/
     container_name: telegram-poll-voter
     tty: true
     env_file: ../.env

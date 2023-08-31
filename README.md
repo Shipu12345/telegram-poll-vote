@@ -9,7 +9,7 @@ will vote in telegram poll of a telegram group. We implemented Sir Asad's Optima
 
 **Prerequisite:**
 
-You need to register [here](my.telegram.org/auth) by giving your desired mobile number and the telegram account.
+You need to register [here](https://my.telegram.org/auth) by giving your desired mobile number and the telegram account.
 
 
 Getting Started
